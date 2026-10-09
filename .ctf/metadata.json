@@ -4,11 +4,5 @@
   "question": "Log in as an admin user without valid credentials by injecting into the LDAP search filter.",
   "category": "WEB",
   "difficulty": 2,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "ldap-injection",
-    "authentication-bypass",
-    "ldap",
-    "injection"
-  ]
+  "evidence_kind": "SECRET"
 }
