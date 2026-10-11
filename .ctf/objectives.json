@@ -1,0 +1,41 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Read the flag",
+      "prompt": "Log in as an admin through the LDAP filter and read the flag (/ctf/flag).",
+      "check": {
+        "evidence": "SECRET",
+        "format": "FLAG{%s}"
+      },
+      "dev": "FLAG{dev-skf-ldap-injection}",
+      "hints": [
+        "The username and password are pasted into a search filter sent to the directory.",
+        "Read about LDAP injection and how search filters are built."
+      ],
+      "steps": [
+        {
+          "key": "server",
+          "title": "Identify the directory",
+          "prompt": "Which LDAP server runs next to the application?",
+          "check": {
+            "answer": [
+              "glauth"
+            ]
+          }
+        },
+        {
+          "key": "class",
+          "title": "Name the weakness",
+          "prompt": "What class of vulnerability is this?",
+          "check": {
+            "answer": [
+              "ldap injection",
+              "ldap filter injection"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
