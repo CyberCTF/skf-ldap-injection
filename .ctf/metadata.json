@@ -1,8 +1,11 @@
 {
+  "project_name": "cyberlabs-skf-ldap-injection",
+  "slug": "skf-ldap-injection",
   "title": "OWASP SKF LDAP Injection",
   "description": "A Python 2 Flask login backed by a local GLAuth LDAP server. The username and password are pasted into the LDAP search filter.",
-  "question": "Log in as an admin user without valid credentials by injecting into the LDAP search filter; the flag is in /ctf/flag.",
-  "category": "WEB",
+  "category": "web",
   "difficulty": 2,
-  "evidence_kind": "SECRET"
+  "evidence_kind": "SECRET",
+  "capabilities": [],
+  "question": "Log in as an admin user without valid credentials by injecting into the LDAP search filter; the flag is in /ctf/flag."
 }
